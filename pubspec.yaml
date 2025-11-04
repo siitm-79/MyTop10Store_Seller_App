@@ -1,0 +1,71 @@
+name: eshopmultivendor
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none'
+
+version: 1.0.0+8
+
+environment:
+  # Flutter 3.x और नए SDK के लिए SDK रेंज अपडेटेड
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # सभी पुराने/समस्याग्रस्त प्लगइन्स को नवीनतम स्थिर वर्ज़न पर अपडेट किया गया है
+  cupertino_icons: ^1.0.8            # सुनिश्चित करने के लिए नवीनतम
+  flutter_svg: ^2.0.10               # सुनिश्चित करने के लिए नवीनतम
+  provider: ^6.0.5                   # सुनिश्चित करने के लिए नवीनतम
+  http: ^1.2.1                       # सुनिश्चित करने के लिए नवीनतम
+  jaguar_jwt: ^3.0.0                 # स्थिर
+  shared_preferences: ^2.2.3         # सुनिश्चित करने के लिए नवीनतम
+  connectivity_plus: ^7.0.0          # सुनिश्चित करने के लिए नवीनतम
+  firebase_auth: ^6.1.2             # सुनिश्चित करने के लिए नवीनतम
+  cached_network_image: ^3.3.1       # सुनिश्चित करने के लिए नवीनतम
+  firebase_core: ^4.2.1             # सुनिश्चित करने के लिए नवीनतम
+  country_code_picker: ^3.0.0         # स्थिर
+  intl: ^0.20.2                      # सुनिश्चित करने के लिए नवीनतम
+  flutter_localizations:
+    sdk: flutter
+  shimmer: ^3.0.0                    # सुनिश्चित करने के लिए नवीनतम
+  url_launcher: ^6.2.6               # सुनिश्चित करने के लिए नवीनतम
+  sms_autofill: ^2.3.0               # स्थिर
+  # image_picker के वर्ज़न को 1.1.2 से 1.1.2 पर रखा गया है, लेकिन नए API का उपयोग करना होगा।
+  image_picker: ^1.1.2
+  # fl_chart को स्थिर रखा गया है (कोड में बदलाव आवश्यक है)
+  fl_chart: ^1.1.1
+  file_picker: ^10.3.3                # सुनिश्चित करने के लिए नवीनतम
+  # flutter_local_notifications को 17.x में रखा गया है (कोड में बदलाव आवश्यक है)
+  flutter_local_notifications: ^19.5.0
+  firebase_messaging: ^16.0.4        # सुनिश्चित करने के लिए नवीनतम
+  sticky_headers: ^0.3.0+2             # स्थिर
+  flutter_html: ^3.0.0               # सुनिश्चित करने के लिए नवीनतम
+  fluttertoast: ^9.0.0               # सुनिश्चित करने के लिए नवीनतम
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# यह ओवरराइड पुरानी लाइब्रेरी के कारण आवश्यक है, इसे स्थिर रखा गया है।
+dependency_overrides:
+  modal_bottom_sheet: ^3.0.0-pre
+
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - lib/Language/
+
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: opensans
+      fonts:
+        - asset: assets/font/OpenSans-Regular.ttf
